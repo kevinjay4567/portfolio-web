@@ -1,0 +1,50 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TecComponent from "../components/TecComponent.astro";
+---
+
+<BaseLayout title="Portfolio web">
+  <main>
+    <section class="head-section">
+      <div>IMG</div>
+      <h4>Hi, I'm Kevin 👋</h4>
+      <h3><strong>Fullstack</strong> developer</h3>
+    </section>
+
+    <TecComponent />
+
+    <section class="projects-section">
+      <h2>My last projects</h2>
+    </section>
+  </main>
+</BaseLayout>
+
+<style lang="scss">
+  .head-section {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    div {
+      height: 120px;
+      width: 120px;
+      background-color: gray;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+    }
+    strong {
+      color: #40b480;
+    }
+    h4 {
+      margin: 5px;
+    }
+    h3 {
+      margin: 0px;
+    }
+  }
+</style>

@@ -1,0 +1,28 @@
+---
+import Header from "../components/Header.astro";
+import NavBar from "../components/NavBar.astro";
+const { title } = Astro.props;
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is a web portfolio created by a fullstack developer"
+    />
+    <Header title={title} />
+  </head>
+  <body>
+    <NavBar />
+    <hr />
+    <slot />
+    <style lang="scss">
+      body {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    </style>
+  </body>
+</html>
