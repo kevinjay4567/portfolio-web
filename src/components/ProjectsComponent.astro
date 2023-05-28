@@ -1,0 +1,46 @@
+---
+import Card from "./Card.astro";
+---
+
+<section class="projects-section">
+  <h2>My last projects</h2>
+  <ul class="projects-list">
+    <li>
+      <Card
+        title="Chat app"
+        body="Fullstack chat app project make with Vue - Laravel stack"
+        href="/chat-app.png"
+      />
+    </li>
+    <li>
+      <Card
+        title="Grocery store"
+        body="Frontend app project with Vue using pinia library and vue router"
+        href="/grocery-store.png"
+      />
+    </li>
+    <li>
+      <Card title="Project 1" body="first project with vue" href="" />
+    </li>
+  </ul>
+</section>
+
+<style>
+  .projects-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (min-width: 600px) {
+    .projects-list {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
+</style>

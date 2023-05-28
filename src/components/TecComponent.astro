@@ -1,24 +1,55 @@
+---
+import TecImg from "./TecImg.astro";
+---
+
 <section class="tec-section">
-  <h2>Tecnologies</h2>
+  <h2>Tec stack</h2>
   <div class="tec-list">
     <ul>
-      <li>Vue</li>
-      <li>Laravel</li>
-      <li>Tailwind</li>
-      <li>Typescript</li>
-      <li>Git</li>
-      <li>Docker</li>
+      <li>
+        <TecImg src="/vue.svg" alt="vue icon" caption="Vue" />
+      </li>
+      <li>
+        <TecImg src="/laravel.svg" alt="laravel icon" caption="Laravel" />
+      </li>
+      <li>
+        <TecImg src="/tailwind.svg" alt="tailwind icon" caption="Tailwind" />
+      </li>
+      <li>
+        <TecImg
+          src="/typescript.svg"
+          alt="typescript icon"
+          caption="Typescript"
+        />
+      </li>
+      <li>
+        <TecImg src="/github.svg" alt="github icon" caption="Github" />
+      </li>
+      <li>
+        <TecImg src="/docker.svg" alt="docker icon" caption="Docker" />
+      </li>
     </ul>
+
+    <style lang="scss">
+      .tec-list {
+        ul {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          list-style: none;
+          padding-left: 0px;
+          li {
+            justify-self: center;
+          }
+        }
+      }
+      @media (min-width: 600px) {
+        .tec-list {
+          ul {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+          }
+        }
+      }
+    </style>
   </div>
 </section>
-
-<style lang="scss">
-  .tec-list {
-    ul {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      list-style: none;
-      gap: 5px;
-    }
-  }
-</style>
