@@ -13,13 +13,23 @@
 
 <style lang="scss">
   .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     form {
       display: flex;
       flex-direction: column;
+      width: 80%;
       gap: 10px;
+      padding: 15px;
+      box-shadow: 1px 1px 25px 1px black;
+      border-radius: 10px;
+      max-width: 500px;
 
       input {
         color: black;
+        padding-top: 5px;
+        padding-bottom: 5px;
       }
       textarea {
         resize: none;
